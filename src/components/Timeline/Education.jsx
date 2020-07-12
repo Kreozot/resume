@@ -4,6 +4,8 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { format } from 'date-fns';
 import SchoolIcon from '@material-ui/icons/School';
 
+import styles from './Timeline.module.scss';
+
 export default function Education(props) {
   const {
     education,
@@ -14,12 +16,13 @@ export default function Education(props) {
   return (
     <VerticalTimelineElement
       date={ dateStr }
-      className="vertical-timeline-element--education"
+      className={ styles.itemEducation }
       position="right"
       icon={ <SchoolIcon/> }
+      iconClassName={ styles.icon }
     >
-      <h3 className="vertical-timeline-element-title">{ education.institution }</h3>
-      <h4 className="vertical-timeline-element-subtitle">{ education.degree } in { education.speciality }</h4>
+      <h3 className={ styles.title }>{ education.degree } in { education.speciality }</h3>
+      <h4 className={ styles.subtitle }>{ education.institution }</h4>
     </VerticalTimelineElement>
   )
 }

@@ -1,19 +1,58 @@
-.vertical-timeline-element-content {
-  color: black;
+.container {
+
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
-  border-top: 3px solid #2196f3;
+.item {
+  &Education {
+    .icon {
+      background-color: var(--color-accent-1);
+    }
+  }
+  &Course {
+    .icon {
+      background-color: var(--color-accent-2);
+    }
+  }
+  &Employment {
+    .icon {
+      background-color: var(--color-accent-3);
+    }
+  }
 }
 
-.vertical-timeline-element--education .vertical-timeline-element-content {
-  border-top: 3px solid #e91e63;
+.title {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: var(--color-1);
 }
 
-.vertical-timeline-element-date {
-color: #333;
+.subtitle {
+  margin: 0;
+  font-size: 1em;
 }
 
-.vertical-timeline-element-icon {
-  background-color: rgb(191, 226, 255) ;
+.description {
+  p {
+    margin: 0;
+  }
+
+  li {
+    margin: 8px 0 0;
+  }
+}
+
+.dates {
+
+}
+
+.icon {
+  color: var(--color-font-reverse);
+}
+
+.techStack {
+
+}
+
+.techStackItem {
+
 }

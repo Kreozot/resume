@@ -7,6 +7,8 @@ import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 
 import { formatText } from '../../common/typograf';
 
+import styles from './Timeline.module.scss';
+
 export default function Course(props) {
   const {
     course,
@@ -21,12 +23,16 @@ export default function Course(props) {
   return (
     <VerticalTimelineElement
       date={ dateStr }
-      className="vertical-timeline-element--course"
+      className={ styles.itemCourse }
       position="right"
       icon={ <CastForEducationIcon/> }
+      iconClassName={ styles.icon }
     >
-      <h3 className="vertical-timeline-element-title">{ course.title }</h3>
-      { documentToReactComponents(course.description.json, options) }
+      <h3 className={ styles.title }>{ course.title }</h3>
+      <h4 className={ styles.subtitle }>~{ course.hours } hours</h4>
+      <div className={ styles.description }>
+        { documentToReactComponents(course.description.json, options) }
+      </div>
     </VerticalTimelineElement>
   )
 }

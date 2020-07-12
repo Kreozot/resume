@@ -69,7 +69,7 @@ export default function Timeline(props) {
   }, [data]);
 
   return (
-    <VerticalTimeline animate={ true }>
+    <VerticalTimeline animate={ true } className={ styles.container }>
       { items.map((item) => {
         if (item.internal.type === 'ContentfulEmployment') {
           return <Employment employment={ item } key={ item.id }/>;

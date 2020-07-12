@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
+import "./scheme.css"
 import "./Layout.css"
 
 const Layout = ({ children }) => {
@@ -32,8 +33,9 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
+        data-theme-container
       >
-        <main>{children}</main>
+        <main data-theme="color-1">{children}</main>
       </div>
     </>
   )

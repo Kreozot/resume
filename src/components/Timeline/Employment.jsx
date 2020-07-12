@@ -7,6 +7,8 @@ import WorkIcon from '@material-ui/icons/Work';
 
 import { formatText } from '../../common/typograf';
 
+import styles from './Timeline.module.scss';
+
 export default function Employment(props) {
   const {
     employment,
@@ -21,13 +23,17 @@ export default function Employment(props) {
   return (
     <VerticalTimelineElement
       date={ dateStr }
-      className="vertical-timeline-element--work"
+      className={ styles.itemEmployment }
+      iconClassName={ styles.icon }
       position="left"
       icon={ <WorkIcon/> }
+      iconClassName={ styles.icon }
     >
-      <h3 className="vertical-timeline-element-title">{ employment.jobTitle }</h3>
-      <h4 className="vertical-timeline-element-subtitle">{ employment.employer }</h4>
-      { documentToReactComponents(employment.description.json, options) }
+      <h3 className={ styles.title }>{ employment.jobTitle }</h3>
+      <h4 className={ styles.subtitle }>{ employment.employer }</h4>
+      <div className={ styles.description }>
+        { documentToReactComponents(employment.description.json, options) }
+      </div>
     </VerticalTimelineElement>
   )
 }
