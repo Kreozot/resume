@@ -1,10 +1,11 @@
 :root {
   /* https://coolors.co/0a2463-304c89-648de5-f79824-b3efb2 */
-  --color-1: hsla(222, 90%, 39%, 1);
-  --color-2: hsla(221, 65%, 54%, 1);
-  --color-3: hsla(221, 56%, 90%, 1);
-  --color-4: hsla(33, 85%, 97%, 1);
-  --color-5: hsla(119, 26%, 94%, 1);
+  --color-1: #0a2463ff;
+  --color-2: #304c89ff;
+  --color-3: #648de5ff;
+  --color-4: #f79824ff;
+  --color-5: rgb(226, 245, 226);
+
 
   --color-accent-1: #5f0a87ff;
   --color-accent-2: #fe5d26ff;
@@ -17,4 +18,7 @@
 
   --color-accent: var(--color-4);
   --color-background-light: var(--color-5);
+
+  --color-background-label: var(--color-3);
+  --color-font-label: white;
 }

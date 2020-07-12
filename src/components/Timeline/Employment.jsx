@@ -34,6 +34,13 @@ export default function Employment(props) {
       <div className={ styles.description }>
         { documentToReactComponents(employment.description.json, options) }
       </div>
+      <div className={ styles.techStack }>
+        { employment.techStack.map((item) => (
+          <div className={ styles.techStackItem }>
+            { item }
+          </div>
+        )) }
+      </div>
     </VerticalTimelineElement>
   )
 }
