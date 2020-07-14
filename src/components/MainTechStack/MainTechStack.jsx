@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import sortBy from 'lodash/sortBy';
 
+import Section from 'components/Section';
 import MainTechStackItem from './MainTechStackItem';
 
 import styles from './MainTechStack.module.scss';
@@ -23,10 +24,10 @@ export default function MainTechStack(props) {
   const items = useMemo(() => sortBy(data.allContentfulMainTechStack.nodes, 'order'), []);
 
   return (
-    <div className={ styles.container }>
+    <Section className={ styles.container } title="Main tech stack">
       { items.map((item) => (
         <MainTechStackItem item={ item } key={ item.id }/>
       )) }
-    </div>
+    </Section>
   )
 }
