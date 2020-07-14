@@ -13,23 +13,6 @@ import styles from './Timeline.module.scss';
 export default function Timeline(props) {
   const data = useStaticQuery(graphql`
     query TimelineQuery {
-      allContentfulEmployment {
-        nodes {
-          id
-          jobTitle
-          startDate
-          url
-          endDate
-          employer
-          techStack
-          description {
-            json
-          }
-          internal {
-            type
-          }
-        }
-      }
       allContentfulEducation {
         nodes {
           id
@@ -62,7 +45,6 @@ export default function Timeline(props) {
 
   const items = useMemo(() => {
     return sortBy([
-      ...data.allContentfulEmployment.nodes,
       ...data.allContentfulEducation.nodes,
       ...data.allContentfulCourse.nodes,
     ], (item) => 0 - new Date(item.startDate));
@@ -71,9 +53,6 @@ export default function Timeline(props) {
   return (
     <VerticalTimeline animate={ true } className={ styles.container }>
       { items.map((item) => {
-        if (item.internal.type === 'ContentfulEmployment') {
-          return <Employment employment={ item } key={ item.id }/>;
-        }
         if (item.internal.type === 'ContentfulEducation') {
           return <Education education={ item } key={ item.id }/>;
         }
