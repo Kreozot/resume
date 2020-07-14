@@ -1,10 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Link from './Link';
+import LinksItem from './LinksItem';
 import Section from 'components/Section';
 
-import styles from './Link.module.scss';
+import styles from './Links.module.scss';
 
 export default function Links() {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ export default function Links() {
   return (
     <Section title="Links" className={ styles.container }>
       { data.allContentfulLink.nodes.map((link) => (
-        <Link link={ link } key={ link.id }/>
+        <LinksItem item={ link } key={ link.id }/>
       )) }
     </Section>
   );

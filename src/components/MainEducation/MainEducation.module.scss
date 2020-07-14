@@ -1,0 +1,31 @@
+.title {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: var(--color-1);
+}
+
+.subtitle {
+  font-size: 1em;
+  margin: 0;
+}
+
+.description {
+  margin-top: 8px;
+
+  p {
+    margin: 0;
+    line-height: 1.3em;
+  }
+
+  li {
+    margin: 4px 0 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.item + .item {
+  margin-top: 24px;
+}
