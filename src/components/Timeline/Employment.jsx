@@ -36,7 +36,7 @@ export default function Employment(props) {
       </div>
       <div className={ styles.techStack }>
         { employment.techStack.map((item) => (
-          <div className={ styles.techStackItem }>
+          <div className={ styles.techStackItem } key={ item }>
             { item }
           </div>
         )) }

@@ -4,7 +4,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
 
-import styles from './Link.module.css';
+import styles from './Link.module.scss';
 
 export default function Link(props) {
   const { link } = props;
@@ -19,7 +19,7 @@ export default function Link(props) {
     } else {
       return LinkIcon;
     }
-  })
+  }, [link.type]);
 
   return (
     <div className={ styles.container }>

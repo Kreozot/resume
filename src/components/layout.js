@@ -25,19 +25,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-        data-theme-container
-      >
-        <main data-theme="color-1">{children}</main>
-      </div>
-    </>
+    <main data-theme="color-1" className="main">{children}</main>
   )
 }
 
