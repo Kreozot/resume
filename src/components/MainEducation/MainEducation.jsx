@@ -16,9 +16,8 @@ export default function MainEducation(props) {
           degree
           startDate
           speciality
-          internal {
-            type
-          }
+          url
+          name
         }
       }
     }

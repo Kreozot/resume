@@ -21,9 +21,6 @@ export default function Jobs(props) {
           description {
             json
           }
-          internal {
-            type
-          }
         }
       }
     }

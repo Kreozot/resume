@@ -17,9 +17,6 @@ export default function AdditionalEducation(props) {
           description {
             json
           }
-          internal {
-            type
-          }
         }
       }
     }
