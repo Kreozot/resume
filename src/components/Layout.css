@@ -9,7 +9,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background-base);
-  color: var(--color-font-base)
+  color: var(--color-font-base);
+  margin: 24px;
 }
 
 .main {
@@ -632,9 +633,9 @@ pre tt:after {
 }
 
 a {
-  color: var(--color-font-base);
+  color: var(--color-font-link);
 }
 
 a:hover, a:active {
-  color: var(--color-font-accent);
+  color: var(--color-font-link-active);
 }

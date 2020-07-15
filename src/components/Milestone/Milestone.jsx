@@ -19,6 +19,7 @@ export default function Milestone(props) {
     subtitle,
     descriptionJson,
     techStack,
+    Icon,
   } = props;
 
   const dateStr = useMemo(() => {
@@ -31,6 +32,11 @@ export default function Milestone(props) {
   return (
     <div className={ styles.item }>
       <div className={ styles.header }>
+        { Boolean(Icon) &&
+          <div className={ styles.icon }>
+            <Icon/>
+          </div>
+        }
         <div>
           <h3 className={ styles.title }>{ title }</h3>
           { Boolean(subtitle) &&

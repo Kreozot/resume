@@ -53,3 +53,12 @@
   background-color: var(--color-background-label);
   color: var(--color-font-label);
 }
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

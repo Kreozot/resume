@@ -17,6 +17,7 @@ export default function Jobs(props) {
           endDate
           employer
           techStack
+          name
           description {
             json
           }
