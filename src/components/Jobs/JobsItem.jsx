@@ -24,7 +24,7 @@ export default function JobsItem(props) {
   return (
     <Milestone
       title={ item.jobTitle }
-      subtitle={ item.employer }
+      subtitle={ <a href={ item.url } target="_blank" rel="noreferrer">{ item.employer }</a> }
       descriptionJson={ item.description.json }
       startDate={ item.startDate }
       endDate={ item.endDate }
