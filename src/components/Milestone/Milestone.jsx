@@ -3,6 +3,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { format } from 'date-fns';
 
 import { formatText } from 'common/typograf';
+import RichText from 'components/RichText';
 
 import styles from './Milestone.module.scss';
 
@@ -42,7 +43,7 @@ export default function Milestone(props) {
       </div>
       { Boolean(descriptionJson) &&
         <div className={ styles.description }>
-          { documentToReactComponents(descriptionJson, richTextRenderOptions) }
+          <RichText textJson={ descriptionJson }/>
         </div>
       }
       { Boolean(techStack) &&
