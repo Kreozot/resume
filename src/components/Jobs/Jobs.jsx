@@ -5,8 +5,6 @@ import sortBy from 'lodash/sortBy';
 import JobsItem from './JobsItem';
 import Section from 'components/Section';
 
-import styles from './Jobs.module.scss';
-
 export default function Jobs(props) {
   const data = useStaticQuery(graphql`
     query JobsQuery {
@@ -35,7 +33,7 @@ export default function Jobs(props) {
   }, [data]);
 
   return (
-    <Section title="Jobs history" className={ styles.container }>
+    <Section title="Jobs history">
       { items.map((item) => (
         <JobsItem item={ item } key={ item.id }/>
       )) }

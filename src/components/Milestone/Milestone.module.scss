@@ -26,6 +26,19 @@
   }
 }
 
+.item + .item {
+  margin-top: 24px;
+}
+
+.header {
+  display: flex;
+}
+
+.dates {
+  color: var(--color-text-secondary);
+  margin-left: 24px;
+}
+
 .techStack {
   display: flex;
   flex-wrap: wrap;
@@ -40,8 +53,4 @@
   margin: 4px 4px;
   background-color: var(--color-background-label);
   color: var(--color-font-label);
-}
-
-.item + .item {
-  margin-top: 24px;
 }

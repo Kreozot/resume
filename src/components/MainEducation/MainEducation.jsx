@@ -5,8 +5,6 @@ import sortBy from 'lodash/sortBy';
 import MainEducationItem from './MainEducationItem';
 import Section from 'components/Section';
 
-import styles from './MainEducation.module.scss';
-
 export default function MainEducation(props) {
   const data = useStaticQuery(graphql`
     query MainEducationQuery {
@@ -31,7 +29,7 @@ export default function MainEducation(props) {
   }, [data]);
 
   return (
-    <Section title="Education" className={ styles.container }>
+    <Section title="Education">
       { items.map((item) => (
         <MainEducationItem item={ item } key={ item.id }/>
       )) }

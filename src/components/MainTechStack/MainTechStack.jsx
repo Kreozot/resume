@@ -21,7 +21,7 @@ export default function MainTechStack(props) {
     }
   `);
 
-  const items = useMemo(() => sortBy(data.allContentfulMainTechStack.nodes, 'order'), []);
+  const items = useMemo(() => sortBy(data.allContentfulMainTechStack.nodes, 'order'), [data]);
 
   return (
     <Section className={ styles.container } title="Main tech stack">
