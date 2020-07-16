@@ -8,12 +8,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import GitHubCorner from 'components/GitHubCorner';
+
 import "./scheme.scss"
 import "./Layout.scss"
 
 const Layout = ({ children }) => {
   return (
-    <main data-theme="color-1" className="main">{children}</main>
+    <>
+      <main data-theme="color-1" className="main">
+        { children }
+      </main>
+      <GitHubCorner/>
+    </>
   )
 }
 

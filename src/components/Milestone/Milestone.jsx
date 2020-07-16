@@ -1,15 +1,9 @@
 import React, { useMemo } from 'react';
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { format } from 'date-fns';
 
-import { formatText } from 'common/typograf';
 import RichText from 'components/RichText';
 
 import styles from './Milestone.module.scss';
-
-const richTextRenderOptions = {
-  renderText: (text) => formatText(text)
-};
 
 export default function Milestone(props) {
   const {
