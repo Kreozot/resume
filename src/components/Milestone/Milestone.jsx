@@ -24,24 +24,39 @@ export default function Milestone(props) {
 
   const dateStr = useMemo(() => {
     if (endDate) {
-      return `${ format(new Date(startDate), 'MMMM, yyyy') } — ${ format(new Date(endDate), 'MMMM, yyyy') }`;
+      return (
+        <>
+          <div className={ styles.date }>
+            { format(new Date(startDate), 'MMMM, yyyy — ') }
+          </div>
+          <div className={ styles.date }>
+            { format(new Date(endDate), 'MMMM, yyyy') }
+          </div>
+        </>
+      );
     }
-    return format(new Date(startDate), 'MMMM, yyyy');
+    return (
+      <div className={ styles.date }>
+        { format(new Date(startDate), 'MMMM, yyyy') }
+      </div>
+    );
   }, [startDate, endDate]);
 
   return (
     <div className={ styles.item }>
       <div className={ styles.header }>
-        { Boolean(Icon) &&
-          <div className={ styles.icon }>
-            <Icon/>
-          </div>
-        }
-        <div>
-          <h3 className={ styles.title }>{ title }</h3>
-          { Boolean(subtitle) &&
-            <h4 className={ styles.subtitle }>{ subtitle }</h4>
+        <div className={ styles.jobBlock }>
+          { Boolean(Icon) &&
+            <div className={ styles.icon }>
+              <Icon/>
+            </div>
           }
+          <div className={ styles.jobInfo }>
+            <h3 className={ styles.title }>{ title }</h3>
+            { Boolean(subtitle) &&
+              <h4 className={ styles.subtitle }>{ subtitle }</h4>
+            }
+          </div>
         </div>
         <div className={ styles.dates }>
           { dateStr }

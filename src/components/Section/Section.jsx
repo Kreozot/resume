@@ -1,5 +1,5 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 import styles from './Section.module.scss';
 
@@ -7,7 +7,7 @@ export default function Section(props) {
   const { title, children, className } = props;
 
   return (
-    <Zoom>
+    <Slide bottom>
       <div className={ styles.container }>
         <h2 className={ styles.title }>
           { title }
@@ -16,6 +16,6 @@ export default function Section(props) {
           { children }
         </div>
       </div>
-    </Zoom>
+    </Slide>
   )
 }

@@ -1,16 +1,20 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px; // for vertical distancing after wrap
 }
 
 .item {
   display: inline-flex;
   flex: 1;
   justify-content: center;
+  margin-top: 8px; // for vertical distancing after wrap
 }
 
 .title {
   display: inline-block;
   margin-left: 4px;
+  white-space: nowrap;
 }
 
 .link {
