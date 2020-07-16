@@ -17,6 +17,10 @@ body {
   @include mobile {
     margin: 4px 0;
   }
+
+  @include print {
+    margin: 4px 0;
+  }
 }
 
 .main {
