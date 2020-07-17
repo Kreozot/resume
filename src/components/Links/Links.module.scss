@@ -1,10 +1,16 @@
+@import 'common/mixins';
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 16px; // for vertical distancing after wrap
+  padding-top: 8px; // for vertical distancing after wrap
+
+  @include mobile {
+    padding-top: 0;
+  }
 
   .item {
     flex: 1;
-    margin-top: 8px; // for vertical distancing after wrap
+    margin-top: 16px; // for vertical distancing after wrap
   }
 }
