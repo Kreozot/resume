@@ -29,6 +29,10 @@
   }
 }
 
+.item {
+  page-break-inside: avoid;
+}
+
 .item + .item {
   margin-top: 24px;
 }
