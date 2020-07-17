@@ -1,7 +1,13 @@
 @import 'common/mixins';
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
+
+  @include mobile {
+    grid-gap: 8px;
+  }
 }
 
 .item {
@@ -19,6 +25,11 @@
   @include mobile {
     width: 50px;
     height: 50px;
+  }
+
+  @include tablet {
+    width: 65px;
+    height: 65px;
   }
 
   @include print {

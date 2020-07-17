@@ -15,7 +15,12 @@ const icons = {
 };
 
 export default function Link(props) {
-  const { url, title, type, className } = props;
+  const {
+    url,
+    title,
+    type,
+    className = '',
+  } = props;
 
   const Icon = useMemo(() => {
     return icons[type] || null;

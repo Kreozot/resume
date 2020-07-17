@@ -3,10 +3,15 @@ import React from 'react';
 import styles from './Section.module.scss';
 
 export default function Section(props) {
-  const { title, children, className } = props;
+  const {
+    title,
+    children,
+    className = '',
+    outerClassName = '',
+  } = props;
 
   return (
-    <div className={ styles.container }>
+    <div className={ `${ outerClassName } ${ styles.container }` }>
       <h2 className={ styles.title }>
         { title }
       </h2>

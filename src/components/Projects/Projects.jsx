@@ -41,7 +41,7 @@ export default function Projects(props) {
   }, [data]);
 
   return (
-    <Section title="Pet projects" className={ styles.container }>
+    <Section title="Pet projects" className={ styles.container } outerClassName={ styles.section }>
       { items.map((item) => (
         <ProjectsItem item={ item } key={ item.id }/>
       )) }

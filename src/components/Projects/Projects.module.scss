@@ -1,15 +1,22 @@
 @import 'common/mixins';
 
+.section {
+  page-break-before: always;
+}
+
 .container {
-  display: flex;
-  padding: 0;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  margin: 24px;
   flex: 1;
 }
 
@@ -34,7 +41,7 @@
   align-items: center;
   margin-top: 16px;
 
-  @include mobile {
+  @include tablet {
     margin-top: 8px;
   }
 }
