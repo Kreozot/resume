@@ -7,21 +7,18 @@ import LinkedInIcon from 'images/icon-linkedin.svg';
 
 import styles from './Link.module.scss';
 
+const icons = {
+  linkedin: LinkedInIcon,
+  facebook: FacebookIcon,
+  github: GitHubIcon,
+  stackoverflow: StackOverflow,
+};
+
 export default function Link(props) {
   const { url, title, type, className } = props;
 
   const Icon = useMemo(() => {
-    if (type === 'linkedin') {
-      return LinkedInIcon;
-    } else if (type === 'facebook') {
-      return FacebookIcon;
-    } else if (type === 'github') {
-      return GitHubIcon;
-    } else if (type === 'stackoverflow') {
-      return StackOverflow;
-    } else {
-      return null;
-    }
+    return icons[type] || null;
   }, [type]);
 
   return (
@@ -33,5 +30,5 @@ export default function Link(props) {
         <span className={ styles.title }>{ title }</span>
       </a>
     </div>
-  )
+  );
 }

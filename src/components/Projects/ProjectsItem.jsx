@@ -5,14 +5,15 @@ import TechStack from 'components/TechStack';
 import Link from 'components/Link';
 
 import styles from './Projects.module.scss';
-import GitHubIcon from 'images/icon-github.svg';
 
 export default function ProjectsItem(props) {
   const { item } = props;
 
   return (
     <div className={ styles.item }>
-      <img src={ item.image.file.url } className={ styles.image } alt="screenshot"/>
+      <div className={ styles.imageBlock }>
+        <img src={ item.image.file.url } className={ styles.image } alt="screenshot"/>
+      </div>
       <div className={ styles.titleBlock }>
         <img src={ item.logo.file.url } className={ styles.logo } alt="logo"/>
         <h3 className={ styles.title }>

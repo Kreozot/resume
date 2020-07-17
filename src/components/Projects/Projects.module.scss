@@ -3,6 +3,24 @@
   padding: 0;
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  flex: 1;
+}
+
+.imageBlock {
+  position: relative;
+}
+
+.image {
+  border: 1px solid silver;
+  object-fit: contain;
+  width: 100%;
+  height: 270px;
+}
+
 .titleBlock {
   display: flex;
   flex-wrap: nowrap;
@@ -26,16 +44,6 @@
 
 .description {
   margin-top: 8px;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  margin: 24px;
-}
-
-.image {
-  border: 1px solid silver;
 }
 
 .sourceLink {
