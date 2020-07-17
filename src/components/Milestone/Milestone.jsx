@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import RichText from 'components/RichText';
+import TechStack from 'components/TechStack';
 
 import styles from './Milestone.module.scss';
 
@@ -61,15 +62,7 @@ export default function Milestone(props) {
           <RichText textJson={ descriptionJson }/>
         </div>
       }
-      { Boolean(techStack) &&
-        <div className={ styles.techStack }>
-          { techStack.map((item) => (
-            <div className={ styles.techStackItem } key={ item }>
-              { item }
-            </div>
-          )) }
-        </div>
-      }
+      <TechStack techStack={ techStack }/>
     </div>
   )
 }

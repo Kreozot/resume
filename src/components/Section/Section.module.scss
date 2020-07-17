@@ -5,6 +5,8 @@
   background-color: var(--color-background-block);
   padding: 2px;
   border-radius: 8px;
+  page-break-before: auto;
+  page-break-inside: avoid;
 }
 
 .title {

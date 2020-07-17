@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from 'components/layout';
 import MainTechStack from 'components/MainTechStack';
 import Jobs from 'components/Jobs';
+import Projects from 'components/Projects';
 import MainEducation from 'components/MainEducation';
 import AdditionalEducation from 'components/AdditionalEducation';
 import Links from 'components/Links';
@@ -17,6 +18,7 @@ export default function IndexPage() {
       <Jobs/>
       <MainEducation/>
       <AdditionalEducation/>
+      <Projects/>
       <Links/>
     </Layout>
   );

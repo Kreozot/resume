@@ -1,0 +1,23 @@
+.item {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.title {
+  display: inline-block;
+  margin-left: 0.3em;
+  white-space: nowrap;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
