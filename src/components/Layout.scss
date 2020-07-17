@@ -644,6 +644,8 @@ pre tt:after {
 
 a {
   color: var(--color-font-link);
+
+  transition: color 0.3s;
 }
 
 a:hover, a:active {
