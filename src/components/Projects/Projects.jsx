@@ -37,7 +37,7 @@ export default function Projects(props) {
   `);
 
   const items = useMemo(() => {
-    return sortBy(data.allContentfulProject.nodes, (item) => 0 - new Date(item.startDate));
+    return sortBy(data.allContentfulProject.nodes, (item) => 0 - new Date(item.releaseDate));
   }, [data]);
 
   return (

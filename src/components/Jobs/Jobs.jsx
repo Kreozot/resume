@@ -21,6 +21,11 @@ export default function Jobs(props) {
           description {
             json
           }
+          logo {
+            file {
+              url
+            }
+          }
         }
       }
     }

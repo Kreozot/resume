@@ -17,7 +17,7 @@ export default function ProjectsItem(props) {
       <div className={ styles.titleBlock }>
         <img src={ item.logo.file.url } className={ styles.logo } alt="logo"/>
         <h3 className={ styles.title }>
-          <a href={ item.url }>{ item.title }</a>
+          <a href={ item.url } target="_blank" rel="noreferrer">{ item.title }</a>
         </h3>
       </div>
       <div className={ styles.description }>

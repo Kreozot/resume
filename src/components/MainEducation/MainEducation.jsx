@@ -18,6 +18,11 @@ export default function MainEducation(props) {
           speciality
           url
           name
+          logo {
+            file {
+              url
+            }
+          }
         }
       }
     }
