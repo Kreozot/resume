@@ -33,9 +33,6 @@ export default function MainInfo(props) {
         <p>
           { data.contentfulInfo.mainInfo }
         </p>
-        <p>
-          <a href={ `mailto:${ data.contentfulInfo.email }` }>{ data.contentfulInfo.email }</a>
-        </p>
       </div>
       <Section title="About">
         <RichText textJson={ data.contentfulInfo.about.json }/>
