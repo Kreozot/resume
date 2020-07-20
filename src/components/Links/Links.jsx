@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import sortBy from 'lodash/sortBy';
 
 import Section from 'components/Section';
 import Link from 'components/Link';
@@ -15,14 +16,17 @@ export default function Links() {
           title
           type
           id
+          order
         }
       }
     }
   `);
 
+  const items = useMemo(() => sortBy(data.allContentfulLink.nodes, 'order'), [data]);
+
   return (
     <Section title="Links" className={ styles.container }>
-      { data.allContentfulLink.nodes.map((item) => (
+      { items.map((item) => (
         <Link
           className={ styles.item }
           url={ item.url }

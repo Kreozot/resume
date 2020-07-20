@@ -653,3 +653,11 @@ a {
 a:hover, a:active {
   color: var(--color-font-link-active);
 }
+
+p {
+  margin: 0;
+
+  & + & {
+    margin-top: 0.8em;
+  }
+}

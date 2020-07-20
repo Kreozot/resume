@@ -13,6 +13,7 @@ export default function MainInfo(props) {
         name
         title
         mainInfo
+        email
         about {
           json
         }
@@ -29,9 +30,12 @@ export default function MainInfo(props) {
         <h2 className={ styles.title }>
           { data.contentfulInfo.title }
         </h2>
-        <div>
+        <p>
           { data.contentfulInfo.mainInfo }
-        </div>
+        </p>
+        <p>
+          <a href={ `mailto:${ data.contentfulInfo.email }` }>{ data.contentfulInfo.email }</a>
+        </p>
       </div>
       <Section title="About">
         <RichText textJson={ data.contentfulInfo.about.json }/>

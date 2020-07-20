@@ -4,6 +4,7 @@ import StackOverflow from 'images/icon-stackoverflow.svg';
 import GitHubIcon from 'images/icon-github.svg';
 import FacebookIcon from 'images/icon-facebook.svg';
 import LinkedInIcon from 'images/icon-linkedin.svg';
+import EmailIcon from 'images/icon-email.svg';
 
 import styles from './Link.module.scss';
 
@@ -12,6 +13,7 @@ const icons = {
   facebook: FacebookIcon,
   github: GitHubIcon,
   stackoverflow: StackOverflow,
+  email: EmailIcon,
 };
 
 export default function Link(props) {
