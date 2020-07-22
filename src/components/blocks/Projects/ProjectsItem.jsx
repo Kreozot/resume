@@ -1,8 +1,8 @@
 import React from 'react';
 
-import RichText from 'components/RichText';
-import TechStack from 'components/TechStack';
-import Link from 'components/Link';
+import RichText from 'components/common/RichText';
+import TechStack from 'components/common/TechStack';
+import Link from 'components/common/Link';
 
 import styles from './Projects.module.scss';
 

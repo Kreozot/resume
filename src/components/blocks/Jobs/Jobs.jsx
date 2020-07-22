@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import sortBy from 'lodash/sortBy';
 
 import JobsItem from './JobsItem';
-import Section from 'components/Section';
+import Section from 'components/common/Section';
 
 export default function Jobs(props) {
   const data = useStaticQuery(graphql`

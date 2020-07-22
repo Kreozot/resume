@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import RichText from 'components/RichText';
-import Section from 'components/Section';
+import RichText from 'components/common/RichText';
+import Section from 'components/common/Section';
 
 import styles from './MainInfo.module.scss';
 

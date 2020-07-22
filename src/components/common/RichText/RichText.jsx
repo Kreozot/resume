@@ -1,7 +1,7 @@
 import React from 'react';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-import { formatText } from 'common/typograf';
+import { formatText } from 'common/format';
 
 import styles from './RichText.module.scss';
 

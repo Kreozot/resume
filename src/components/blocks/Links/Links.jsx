@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import sortBy from 'lodash/sortBy';
 
-import Section from 'components/Section';
-import Link from 'components/Link';
+import Section from 'components/common/Section';
+import Link from 'components/common/Link';
 
 import styles from './Links.module.scss';
 

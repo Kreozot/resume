@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Milestone from 'components/Milestone';
+import Milestone from 'components/common/Milestone';
 
 export default function JobsItem(props) {
   const { item } = props;

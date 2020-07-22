@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import sortBy from 'lodash/sortBy';
 
 import ProjectsItem from './ProjectsItem';
-import Section from 'components/Section';
+import Section from 'components/common/Section';
 
 import styles from './Projects.module.scss';
 

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import sortBy from 'lodash/sortBy';
 
-import Section from 'components/Section';
+import Section from 'components/common/Section';
 import MainTechStackItem from './MainTechStackItem';
 
 import styles from './MainTechStack.module.scss';

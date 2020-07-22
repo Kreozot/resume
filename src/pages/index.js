@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Layout from 'components/layout';
-import MainTechStack from 'components/MainTechStack';
-import Jobs from 'components/Jobs';
-import Projects from 'components/Projects';
-import MainEducation from 'components/MainEducation';
-import AdditionalEducation from 'components/AdditionalEducation';
-import Links from 'components/Links';
-import MainInfo from 'components/MainInfo';
+import MainTechStack from 'components/blocks/MainTechStack';
+import Jobs from 'components/blocks/Jobs';
+import Projects from 'components/blocks/Projects';
+import MainEducation from 'components/blocks/MainEducation';
+import AdditionalEducation from 'components/blocks/AdditionalEducation';
+import Links from 'components/blocks/Links';
+import MainInfo from 'components/blocks/MainInfo';
 
 export default function IndexPage() {
 

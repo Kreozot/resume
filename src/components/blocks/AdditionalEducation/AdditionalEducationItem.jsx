@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Milestone from 'components/Milestone';
+import Milestone from 'components/common/Milestone';
 
 import styles from './AdditionalEducation.module.scss';
 

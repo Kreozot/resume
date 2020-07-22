@@ -1,31 +1,21 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from "react";
 
-import React from "react"
-import PropTypes from "prop-types"
+import GitHubCorner from 'components/common/GitHubCorner';
+import Seo from './Seo';
 
-import GitHubCorner from 'components/GitHubCorner';
+import "./scheme.scss";
+import "./Layout.scss";
 
-import "./scheme.scss"
-import "./Layout.scss"
+export default function Layout(props) {
+  const { children } = props;
 
-const Layout = ({ children }) => {
   return (
     <>
-      <main data-theme="color-1" className="main">
+      <main className="main">
         { children }
       </main>
       <GitHubCorner/>
+      <Seo/>
     </>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout

@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
-import { format } from 'date-fns';
 
-import RichText from 'components/RichText';
-import TechStack from 'components/TechStack';
+import RichText from 'components/common/RichText';
+import TechStack from 'components/common/TechStack';
+import { formatDateMonth } from 'common/format';
 
 import styles from './Milestone.module.scss';
 
@@ -23,17 +23,17 @@ export default function Milestone(props) {
       return (
         <>
           <div className={ styles.date }>
-            { format(new Date(startDate), 'MMMM, yyyy — ') }
+            { `${ formatDateMonth(startDate) } — ` }
           </div>
           <div className={ styles.date }>
-            { format(new Date(endDate), 'MMMM, yyyy') }
+            { formatDateMonth(endDate) }
           </div>
         </>
       );
     }
     return (
       <div className={ styles.date }>
-        { format(new Date(startDate), 'MMMM, yyyy') }
+        { formatDateMonth(startDate) }
       </div>
     );
   }, [startDate, endDate]);
