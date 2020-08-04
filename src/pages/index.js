@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
 import MainTechStack from 'components/blocks/MainTechStack';
 import Jobs from 'components/blocks/Jobs';
 import Projects from 'components/blocks/Projects';

@@ -5,6 +5,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
 
+  @media screen and (max-width: 840px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   @include tablet {
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;

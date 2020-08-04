@@ -33,6 +33,11 @@
   @include mobile {
     height: auto;
   }
+
+  @include print {
+    height: 170px;
+    border: none;
+  }
 }
 
 .titleBlock {
