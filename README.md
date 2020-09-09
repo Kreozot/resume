@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Kreozot_resume&metric=alert_status)](https://sonarcloud.io/dashboard?id=Kreozot_resume)
+
 # Sergey Sharov's résumé
 
 ## Configuration
