@@ -14,8 +14,12 @@ export default function MainTechStack(props) {
         nodes {
           id
           title
-          name
           order
+          logo {
+            svg {
+              content
+            }
+          }
         }
       }
     }

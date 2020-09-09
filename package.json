@@ -20,6 +20,7 @@
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-source-contentful": "^2.3.24",
     "gatsby-source-filesystem": "^2.3.14",
+    "gatsby-transformer-inline-svg": "0.0.7",
     "gatsby-transformer-sharp": "^2.5.7",
     "lodash": "^4.17.19",
     "node-sass": "^4.14.1",

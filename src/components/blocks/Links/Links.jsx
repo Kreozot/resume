@@ -14,9 +14,13 @@ export default function Links() {
         nodes {
           url
           title
-          type
           id
           order
+          logo {
+            svg {
+              content
+            }
+          }
         }
       }
     }
@@ -31,8 +35,8 @@ export default function Links() {
           className={ styles.item }
           url={ item.url }
           title={ item.title }
-          type={ item.type }
           key={ item.id }
+          icon={ item.logo.svg.content }
         />
       )) }
     </Section>

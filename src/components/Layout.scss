@@ -27,7 +27,7 @@ body {
   color: var(--color-font-base);
   margin: 24px;
 
-  @include mobile {
+  @include tablet {
     margin: 4px 0;
   }
 

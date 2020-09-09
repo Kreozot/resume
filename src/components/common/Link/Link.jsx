@@ -1,38 +1,22 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 
-import StackOverflow from 'images/icon-stackoverflow.svg';
-import GitHubIcon from 'images/icon-github.svg';
-import FacebookIcon from 'images/icon-facebook.svg';
-import LinkedInIcon from 'images/icon-linkedin.svg';
-import EmailIcon from 'images/icon-email.svg';
+import InlineSvg from 'components/common/InlineSvg';
 
 import styles from './Link.module.scss';
-
-const icons = {
-  linkedin: LinkedInIcon,
-  facebook: FacebookIcon,
-  github: GitHubIcon,
-  stackoverflow: StackOverflow,
-  email: EmailIcon,
-};
 
 export default function Link(props) {
   const {
     url,
     title,
-    type,
+    icon,
     className = '',
   } = props;
-
-  const Icon = useMemo(() => {
-    return icons[type] || null;
-  }, [type]);
 
   return (
     <div className={ `${ className } ${ styles.item }` }>
       <a className={ styles.link } href={ url } target="_blank" rel="noreferrer">
         <div className={ styles.icon }>
-          <Icon/>
+          <InlineSvg content={ icon }/>
         </div>
         <span className={ styles.title }>{ title }</span>
       </a>
