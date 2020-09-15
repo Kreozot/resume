@@ -8,6 +8,7 @@ import MainEducation from 'components/blocks/MainEducation';
 import AdditionalEducation from 'components/blocks/AdditionalEducation';
 import Links from 'components/blocks/Links';
 import MainInfo from 'components/blocks/MainInfo';
+import About from 'components/blocks/About';
 
 export default function IndexPage() {
 
@@ -19,6 +20,7 @@ export default function IndexPage() {
       <MainEducation/>
       <AdditionalEducation/>
       <Projects/>
+      <About/>
       <Links/>
     </Layout>
   );

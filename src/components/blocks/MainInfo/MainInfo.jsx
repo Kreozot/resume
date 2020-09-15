@@ -1,9 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import RichText from 'components/common/RichText';
-import Section from 'components/common/Section';
-
 import styles from './MainInfo.module.scss';
 
 export default function MainInfo(props) {
@@ -14,9 +11,6 @@ export default function MainInfo(props) {
         title
         mainInfo
         email
-        about {
-          json
-        }
       }
     }
   `);
@@ -34,9 +28,6 @@ export default function MainInfo(props) {
           { data.contentfulInfo.mainInfo }
         </p>
       </div>
-      <Section title="About">
-        <RichText textJson={ data.contentfulInfo.about.json }/>
-      </Section>
     </>
   )
 }
