@@ -15,7 +15,9 @@ export default function ProjectsItem(props) {
         <img src={ item.image.file.url } className={ styles.image } alt="screenshot"/>
       </div>
       <div className={ styles.titleBlock }>
-        <img src={ item.logo.file.url } className={ styles.logo } alt="logo"/>
+        { Boolean(item.logo) &&
+          <img src={ item.logo.file.url } className={ styles.logo } alt="logo"/>
+        }
         <h3 className={ styles.title }>
           { item.url
             ? <a href={ item.url } target="_blank" rel="noreferrer">{ item.title }</a>
