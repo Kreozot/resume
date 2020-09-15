@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 import RichText from 'components/common/RichText';
 import Section from 'components/common/Section';
 
+import styles from './About.module.scss';
+
 export default function About(props) {
   const data = useStaticQuery(graphql`
     query AboutQuery {
@@ -16,7 +18,7 @@ export default function About(props) {
   `);
 
   return (
-    <Section title="About">
+    <Section title="About" outerClassName={ styles.section }>
       <RichText textJson={ data.contentfulInfo.about.json }/>
     </Section>
   )
