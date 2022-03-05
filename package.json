@@ -4,6 +4,15 @@
   "description": "Sergey Sharov's résumé",
   "version": "1.0.0",
   "author": "Sergey Sharov <sergey@sharov.dev>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@contentful/rich-text-types": "^14.1.1",
@@ -22,25 +31,16 @@
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-inline-svg": "0.0.7",
     "gatsby-transformer-sharp": "^2.5.7",
-    "lodash": "^4.17.19",
-    "node-sass": "^4.14.1",
+    "lodash": "^4.17.21",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "sass": "^1.49.9",
     "typograf": "^6.11.1"
   },
   "devDependencies": {
     "prettier": "2.0.5"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
