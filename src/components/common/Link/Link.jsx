@@ -25,12 +25,10 @@ export default function Link(props) {
   return (
     <div className={ `${ className } ${ styles.item }` }>
       <a className={ styles.link } href={ url } target="_blank" rel="noreferrer">
-        <div className={ styles.icon }>
-          { Boolean(Icon)
-            ? <Icon/>
-            : <InlineSvg content={ icon }/>
-          }
-        </div>
+        { Boolean(Icon)
+          ? <Icon className={ styles.icon }/>
+          : <InlineSvg content={ icon } className={ styles.icon }/>
+        }
         <span className={ styles.title }>{ title }</span>
       </a>
     </div>

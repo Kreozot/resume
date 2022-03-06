@@ -8,9 +8,7 @@ export default function MainTechStackItem(props) {
 
   return (
     <div className={ styles.item }>
-      <div className={ styles.icon }>
-        <InlineSvg content={ item.logo.svg.content }/>
-      </div>
+      <InlineSvg content={ item.logo.svg.content } className={ styles.icon }/>
       <div className={ styles.title }>
         { item.title }
       </div>
