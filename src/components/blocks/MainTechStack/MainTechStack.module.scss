@@ -1,4 +1,4 @@
-@import 'common/mixins';
+@import "common/mixins";
 
 .container {
   display: grid;
@@ -6,7 +6,7 @@
   grid-gap: 16px;
 
   @include tablet {
-    grid-gap: 8px;
+    grid-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -21,6 +21,7 @@
   align-items: center;
   flex-grow: 1;
   flex-basis: 0;
+  gap: 8px;
 }
 
 .icon {
