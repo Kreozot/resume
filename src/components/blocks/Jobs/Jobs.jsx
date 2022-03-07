@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import sortBy from 'lodash/sortBy';
+import React, { useMemo } from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import sortBy from "lodash/sortBy"
 
-import JobsItem from './JobsItem';
-import Section from 'components/common/Section';
+import JobsItem from "./JobsItem"
+import Section from "components/common/Section"
 
 export default function Jobs(props) {
   const data = useStaticQuery(graphql`
@@ -29,17 +29,20 @@ export default function Jobs(props) {
         }
       }
     }
-  `);
+  `)
 
   const items = useMemo(() => {
-    return sortBy(data.allContentfulEmployment.nodes, (item) => 0 - new Date(item.startDate));
-  }, [data]);
+    return sortBy(
+      data.allContentfulEmployment.nodes,
+      item => 0 - new Date(item.startDate)
+    )
+  }, [data])
 
   return (
-    <Section title="Jobs history">
-      { items.map((item) => (
-        <JobsItem item={ item } key={ item.id }/>
-      )) }
+    <Section title="Work experience">
+      {items.map(item => (
+        <JobsItem item={item} key={item.id} />
+      ))}
     </Section>
-  );
+  )
 }

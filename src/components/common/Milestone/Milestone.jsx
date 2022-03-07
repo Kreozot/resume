@@ -26,7 +26,7 @@ export default function Milestone(props) {
             { `${ formatDateMonth(startDate) } — ` }
           </div>
           <div className={ styles.date }>
-            { formatDateMonth(endDate) }
+            { endDate === 'Now' ? 'Now' : formatDateMonth(endDate) }
           </div>
         </>
       );
