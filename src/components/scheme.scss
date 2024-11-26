@@ -14,4 +14,8 @@
 
   --color-font-link: #2c698d;
   --color-font-link-active: #52bdfc;
+
+  @media print {
+    --color-background-base: white;
+  }
 }
