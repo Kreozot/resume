@@ -1,7 +1,7 @@
-@import 'common/mixins';
+@import "common/mixins";
 
 .section {
-  page-break-before: always;
+  page-break-before: auto;
 }
 
 .container {

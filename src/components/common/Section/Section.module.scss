@@ -1,4 +1,4 @@
-@import 'common/mixins';
+@import "common/mixins";
 
 .container {
   margin-top: 24px;
@@ -6,7 +6,6 @@
   padding: 2px;
   border-radius: 8px;
   page-break-before: auto;
-  // page-break-inside: avoid;
 }
 
 .title {
