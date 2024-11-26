@@ -16,18 +16,16 @@ export default function MainInfo(props) {
   `);
 
   return (
-    <>
-      <div className={ styles.container }>
-        <h1 className={ styles.name }>
-          { data.contentfulInfo.name }
-        </h1>
-        <h2 className={ styles.title }>
-          { data.contentfulInfo.title }
-        </h2>
-        <p>
-          { data.contentfulInfo.mainInfo }
-        </p>
-      </div>
-    </>
+    <div className={ styles.container }>
+      <h1 className={ styles.name }>
+        { data.contentfulInfo.name }
+      </h1>
+      <h2 className={ styles.title }>
+        { data.contentfulInfo.title }
+      </h2>
+      <p>
+        { data.contentfulInfo.mainInfo }
+      </p>
+    </div>
   )
 }
